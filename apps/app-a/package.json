@@ -9,5 +9,8 @@
   "dependencies": {
     "pkg-a": "workspace:*",
     "tooling-config": "workspace:*"
+  },
+  "devDependencies": {
+    "pkg-b": "catalog:internal"
   }
 }
