@@ -1,5 +1,5 @@
 {
-  "name": "pkg-a",
+  "name": "jeremymeng-pkg-a",
   "scripts": {
     "build": "echo \"Building at the speed of Turbo.\" > output-file.txt && cat output-file.txt",
     "lint": "echo \"Linted!\"",

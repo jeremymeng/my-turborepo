@@ -1,5 +1,5 @@
 {
-  "name": "app-a",
+  "name": "jeremymeng-app-a",
   "description": "An application that uses other Internal Packages",
   "scripts": {
     "build": "mkdir -p dist && echo \"Your application output!\" > dist/app-output.txt && echo \"Application A is built!\"",
@@ -7,10 +7,10 @@
     "check-types": "echo \"Types checked!\""
   },
   "dependencies": {
-    "pkg-a": "workspace:*",
+    "jeremymeng-pkg-a": "workspace:*",
     "tooling-config": "workspace:*"
   },
   "devDependencies": {
-    "pkg-b": "catalog:internal"
+    "jeremymeng-pkg-b": "catalog:internal"
   }
 }

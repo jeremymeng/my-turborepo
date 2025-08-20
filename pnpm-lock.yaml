@@ -6,9 +6,9 @@ settings:
 
 catalogs:
   internal:
-    pkg-b:
+    jeremymeng-pkg-b:
       specifier: ^1.0.0
-      version: 1.1.0
+      version: 1.0.0
 
 importers:
 
@@ -20,16 +20,16 @@ importers:
 
   apps/app-a:
     dependencies:
-      pkg-a:
+      jeremymeng-pkg-a:
         specifier: workspace:*
         version: link:../../packages/pkg-a
       tooling-config:
         specifier: workspace:*
         version: link:../../packages/tooling-config
     devDependencies:
-      pkg-b:
+      jeremymeng-pkg-b:
         specifier: catalog:internal
-        version: 1.1.0
+        version: link:../../packages/pkg-b
 
   apps/app-b:
     dependencies:
@@ -52,9 +52,6 @@ importers:
   packages/tooling-config: {}
 
 packages:
-
-  pkg-b@1.1.0:
-    resolution: {integrity: sha512-gTJwzH01pXnSUuTQ7PzwDkYQvGKZo+5yrIQ7d20HvnBE1TzIb0Pl3ohY1h83hbShmccNyPQbFOnUVStZF0BtNw==}
 
   turbo-darwin-64@2.5.6:
     resolution: {integrity: sha512-3C1xEdo4aFwMJAPvtlPqz1Sw/+cddWIOmsalHFMrsqqydcptwBfu26WW2cDm3u93bUzMbBJ8k3zNKFqxJ9ei2A==}
@@ -91,8 +88,6 @@ packages:
     hasBin: true
 
 snapshots:
-
-  pkg-b@1.1.0: {}
 
   turbo-darwin-64@2.5.6:
     optional: true
