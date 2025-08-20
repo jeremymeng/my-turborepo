@@ -1,3 +1,10 @@
+linkWorkspacePackages: true
+
 packages:
   - apps/*
   - packages/*
+
+catalogs:
+  internal:
+    pkg-b: ^1.0.0
+    '@azure/identity': ^4.10.0
